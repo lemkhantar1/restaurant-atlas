@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/res"
+    android:weightSum="1">
+
+            <ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_height="291dp"
+                android:layout_width="match_parent"
+                android:cacheColorHint="#00000000"
+                android:layout_marginTop="120dp"
+                android:background="#92ffffff" />
+
+    <Button
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:text="nouvelle Commande"
+        android:id="@+id/ajouterCommande"
+        android:layout_row="0"
+        android:layout_column="12"
+        android:onClick="ajouterCommande"
+        android:background="#000000"
+        android:textColor="#fff700"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:id="@+id/logout"
+            android:layout_row="0"
+            android:layout_column="6"
+            android:layout_marginTop="10dp"
+            android:onClick="toAuth"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:layout_gravity="right" />
+
+        <Button
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Commande courante"
+            android:id="@+id/commandeCourante"
+            android:layout_row="0"
+            android:layout_column="19"
+            android:onClick="AfficherProduits"
+            android:background="#000000"
+            android:textColor="#fff700"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Commandes"
+            android:id="@+id/commandes"
+            android:onClick="toCommandes"
+            android:layout_row="0"
+            android:layout_column="20"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:layout_weight="0.37" />
+    </GridLayout>
+
+</LinearLayout>
